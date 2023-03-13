@@ -41,3 +41,38 @@ fs.readdir(testFolder, function(error,fileList){
 
 ---
 
+### 글 목록 출력하기
+
+강의링크 : https://youtu.be/ibz2gaW-tyQ
+
+위에서의 fs.readdir 활용
+
+```javascript
+ fs.readdir('./data',function(error,filelist){
+        console.log(filelist);
+        var title = 'Welcome';
+      var description = 'Hello, Node.js'
+      var list = '<ul>';
+      var i = 0;
+      while(i < filelist.length){
+        list = list + `<li><a href="/?id=${filelist[i]}">${filelist[i]}</a></li>`
+        i = i + 1;
+      }
+      list = list + '</ul>';
+```
+
+* filelist에서 list가 있는 만큼만 ul 태그를 생성하고 보여주도록 코드를 바꾸었다. ${list}
+
+
+
+##### 결과 : data directory에 새로운 파일을 생성하고 새로고침하면 새로운 링크가 추가된다.
+
+
+
+초기상태
+
+![image-20230313225516011](README.assets/image-20230313225516011.png)
+
+data directory 에 TEST 라는 파일과 'Hello Test' 라는 내용을 수정
+
+![image-20230313225622802](README.assets/image-20230313225622802.png)
