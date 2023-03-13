@@ -1,6 +1,6 @@
 ### 홈페이지 구현
 
-강의링크 : https://www.inflearn.com/course/lecture?courseSlug=web2-node-js&unitId=12638
+강의링크 : https://youtu.be/krfmrBsWqzs
 
 조건문을 통해 url 별로 홈페이지 구현
 
@@ -15,6 +15,8 @@
 ---
 
 ### 파일목록 알아내기
+
+강의링크 : https://youtu.be/tzJ2K3Yp89I
 
 ##### 하고자 하는것 : data를 수정할때 , 파일의 여러부분을 수정해야한다.
 
